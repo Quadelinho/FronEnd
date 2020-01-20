@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ForumModule } from './forum/forum.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,11 @@ import { ForumModule } from './forum/forum.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ForumModule
+    ForumModule,
+    // RouterModule.forRoot()[
+    //   { path: '', component: PostsListComponent },
+    //   {path: 'posts/:postId', component: PostContentComponent}
+    // ]
   ],
   providers: [],
   bootstrap: [AppComponent]

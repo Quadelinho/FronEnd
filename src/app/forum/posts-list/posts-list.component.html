@@ -1,1 +1,7 @@
 <p>posts-list works!</p>
+<div *ngFor="let post of posts">
+  <a >
+    <b>Title: </b>{{post.title}}
+  </a>
+  <p *ngIf="post.description"><b>Description: </b>{{post.description}}</p>
+</div>

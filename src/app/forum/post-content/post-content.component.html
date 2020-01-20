@@ -1,0 +1,13 @@
+<p>post-content works!</p>
+<div>
+  <b>Title: </b> {{title}}
+  <b>Description: </b> {{description}}
+  <b>Published: </b> {{createdDate}} <b>By: </b> {{author}}
+  <p>{{content}}</p>
+  <div>
+    <b>Comments section:</b>
+    <p *ngFor="let comment of comments">
+      {{comment}}
+    </p>
+  </div>
+</div>
