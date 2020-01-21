@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ForumModule } from './forum/forum.module';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     ForumModule,
+    HttpClientModule
     // RouterModule.forRoot()[
     //   { path: '', component: PostsListComponent },
     //   {path: 'posts/:postId', component: PostContentComponent}

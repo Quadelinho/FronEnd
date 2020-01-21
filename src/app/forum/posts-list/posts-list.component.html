@@ -1,5 +1,5 @@
 <p>posts-list works!</p>
-<div *ngFor="let post of posts">
+<div *ngFor="let post of posts | async">
   <a [title]="'Show post content for ' + post.title" [routerLink]="['/posts', post.postId]">
     <b>Title: </b>{{post.title}}
   </a>
