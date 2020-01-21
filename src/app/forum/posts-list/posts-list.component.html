@@ -1,7 +1,12 @@
 <p>posts-list works!</p>
 <div *ngFor="let post of posts">
-  <a >
+  <a [title]="'Show post content for ' + post.title" [routerLink]="['/posts', post.postId]">
     <b>Title: </b>{{post.title}}
   </a>
   <p *ngIf="post.description"><b>Description: </b>{{post.description}}</p>
+</div>
+<div class="page-navigation">
+  <div class="page-navigation-content">
+    <button class="page-buttons">Prev</button><input class="page-number" type="number" value="1"><button class="page-buttons">Next</button>
+  </div>
 </div>

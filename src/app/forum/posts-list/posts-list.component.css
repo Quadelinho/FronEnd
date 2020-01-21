@@ -1,0 +1,20 @@
+.page-buttons {
+  background-color: grey;
+  margin: 1%;
+  align-content: center;
+}
+
+.page-number {
+  align-self: center;
+}
+
+.page-navigation {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightslategray;
+}
+
+.page-navigation-content {
+  margin-left: 40%;
+}

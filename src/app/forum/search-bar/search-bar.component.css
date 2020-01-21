@@ -1,6 +1,19 @@
 .search {
   background-color: cornflowerblue;
+  display: block;
 }
 .search .search-button {
   background-color: white;
+  margin: 1%;
+}
+
+.search-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.search-label {
+  margin-left: 1%;
 }
