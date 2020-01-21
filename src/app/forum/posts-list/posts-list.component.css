@@ -5,7 +5,8 @@
 }
 
 .page-number {
-  align-self: center;
+  width: 50px;
+  text-align: center;
 }
 
 .page-navigation {
