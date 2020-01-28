@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { postsData } from '../../posts-data';
 import { DataProviderService } from '../data-provider.service';
 import { IPost } from '../ipost';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-posts-list',
@@ -11,7 +12,7 @@ import { IPost } from '../ipost';
 })
 export class PostsListComponent implements OnInit {
 
-  posts; // : IPost []; // postsData; /* = [
+  posts: Observable<IPost[]>; // : IPost []; // postsData; /* = [
 //    {postId: 1, title: '1st post', description: 'Description'},
 //    {postId: 2, title: 'Another post', description: 'Dsc'}
 //  ];*/

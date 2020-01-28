@@ -5,5 +5,5 @@ export interface IPost {
     /*comments: string [];*/
    createdDate: string;
   content: string;
-  postId: number;
+  id: number;
 }

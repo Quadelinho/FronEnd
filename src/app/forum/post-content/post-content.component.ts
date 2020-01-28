@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IPost } from '../ipost';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-post-content',
@@ -7,17 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostContentComponent implements OnInit {
 
+  post: IPost;
   title: string;
   description: string;
   author: string;
   comments: string [];
   createdDate: string;
   content: string;
-  postId;
-  constructor(/*private route: ActivatedRoute*/) { }
+  id;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    // this.route.paramMap.subscribe(params => {this.postId=params.get('postId')})
+    console.log('PostContent onInit, id: ' + this.id);
+     this.route.paramMap.subscribe(params => {this.id = params.get('id'); } );
   }
 
 }
