@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ForumModule } from './forum/forum.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { PostContentComponent } from './forum/post-content/post-content.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
     // RouterModule.forRoot()[
     //   { path: '', component: PostsListComponent },
-    //   {path: 'posts/:postId', component: PostContentComponent}
+    //    {path: 'posts/:postId', component: PostContentComponent}
     // ]
   ],
   providers: [],

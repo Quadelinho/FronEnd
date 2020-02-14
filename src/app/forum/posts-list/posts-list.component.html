@@ -2,6 +2,8 @@
 <div *ngFor="let post of posts | async">
   <a [title]="'Show post content for ' + post.title" [routerLink]="['/entries', post.id]">
     <b>Title: </b>(id: {{post.id}}) {{post.title}}
+    <!--<button (click)="showDetails({{post.id}})">Details</button>--> <!--TDOD: pass id to showDetails-->
+    <button ng-click="showDetails(post.id)">Details</button> <!--TDOD: pass id to showDetails-->
   </a>
   <!-- <p *ngIf="post.description"><b>Description: </b>{{post.description}}</p> -->
   <p *ngIf="post.content"><b>Content: </b>{{post.content}}</p>

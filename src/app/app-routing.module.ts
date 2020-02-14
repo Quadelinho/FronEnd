@@ -6,8 +6,8 @@ import { PostsListComponent } from './forum/posts-list/posts-list.component';
 
 const routes: Routes = [
   // check with the default path
-  { path: '', component: PostsListComponent },
-  {path: 'entries/:id', component: PostContentComponent}
+  { path: '', component: PostsListComponent, pathMatch: 'full'},
+  { path: 'entries/:id', component: PostContentComponent }
 ];
 
 @NgModule({
